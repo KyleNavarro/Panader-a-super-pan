@@ -1,0 +1,71 @@
+:root {
+  /* Colores principales */
+  --color-amarillo-mostaza: #f5b31c; /* Fondo principal */
+  --color-rojo-vino: #861c1c; /* Botones, títulos, llamadas a la acción */
+  --color-marron-oscuro: #3a2210; /* Texto principal */
+  --color-blanco: #ffffff; /* Fondos claros y texto sobre oscuro */
+  --color-beige-claro: #f8e3b0; /* Fondos secundarios, tarjetas */
+}
+
+body {
+  background-color: var(--color-amarillo-mostaza);
+  color: var(--color-marron-oscuro);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-rojo-vino);
+}
+
+a {
+  color: var(--color-azul-claro);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+button {
+  background-color: var(--color-rojo-vino);
+  color: var(--color-blanco);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: var(--color-azul-claro);
+}
+
+.card {
+  background-color: var(--color-beige-claro);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.barras {
+  display: none;
+}
+
+.desplegable ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+#logo {
+  width: 150px;
+  height: 150px;
+}
