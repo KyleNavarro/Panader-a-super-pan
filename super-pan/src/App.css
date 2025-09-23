@@ -5,6 +5,7 @@
   --color-marron-oscuro: #3a2210; /* Texto principal */
   --color-blanco: #ffffff; /* Fondos claros y texto sobre oscuro */
   --color-beige-claro: #f8e3b0; /* Fondos secundarios, tarjetas */
+  font-size: 20px;
 }
 
 body {
@@ -65,7 +66,50 @@ li {
   list-style: none;
 }
 
+header {
+  height: 150px;
+}
+
 #logo {
   width: 150px;
   height: 150px;
+}
+
+.position {
+  position: absolute;
+}
+
+.slider {
+  position: relative;
+  background-image: url("/src/assets/pan1.jpg");
+  background-size: cover; /* La imagen cubre todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* No repite la imagen */
+  width: 100%; /* Ocupa todo el ancho */
+  height: 600px; /* Ocupa toda la altura de la ventana */
+  animation: animate 40s infinite;
+  opacity: 90%;
+}
+
+@keyframes animate {
+  33% {
+    background-image: url("/src/assets/pan3.jpg");
+  }
+  66% {
+    background-image: url("/src/assets/pan2.jpg");
+  }
+  100% {
+    background-image: url("/src/assets/pan1.jpg");
+  }
+}
+
+.sliderText {
+  position: absolute;
+  top: 50%; /* Centrado vertical */
+  left: 50%; /* Centrado horizontal */
+  transform: translate(-50%, -50%);
+  color: white; /* Texto blanco para contraste */
+  font-size: 2.5rem; /* Tamaño grande */
+  font-weight: bold; /* Negrita */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* Sombra para mejor legibilidad */
 }

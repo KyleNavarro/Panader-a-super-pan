@@ -27,14 +27,33 @@ function App() {
               </a>
             </li>
             <li>
-              <a href={vacio}>Nuestros Puntos</a>
+              <a href={vacio}>Nuestras sedes</a>
             </li>
             <li>
-              <a href={vacio}>3043564668</a>
+              <a href="https://wa.me/573043564668" target="_blank">
+                3043564668
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/superpan_bucaramanga/"
+                target="_blank"
+              >
+                <img src="src\assets\instagram.svg" alt="" />
+              </a>
             </li>
           </ul>
         </nav>
       </header>
+
+      <div className="sliderContainer">
+        <div className="slider position">
+          <h1 className="sliderText">
+            Prueba el mejor pan de Bucaramanga en alguno de nuestros 7 puntos en
+            la ciudad
+          </h1>
+        </div>
+      </div>
     </>
   );
 }
