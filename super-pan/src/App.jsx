@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Sedes from "./assets/Sedes";
 
 let vacio = "";
 
@@ -13,51 +14,53 @@ function App() {
 
   return (
     <>
-      <header>
-        <div className="barras">
-          <button onClick={OpenCloseMenu} className="buttonMenu" id="x">
-            soy el boton
-          </button>
-        </div>
-        <nav id="menu" className="desplegable">
-          <ul>
-            <li>
-              <a href="#">
-                <img id="logo" src="src\assets\logo.png" alt="" />
-              </a>
-            </li>
-            <li>
-              <a href="#sedes">Nuestras sedes</a>
-            </li>
-            <li>
-              <a href="https://wa.me/573043564668" target="_blank">
-                3043564668
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/superpan_bucaramanga/"
-                target="_blank"
-              >
-                <img src="src\assets\instagram.svg" alt="" />
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <div className="page">
+        <header>
+          <div className="barras">
+            <button onClick={OpenCloseMenu} className="buttonMenu" id="x">
+              soy el boton
+            </button>
+          </div>
+          <nav id="menu" className="desplegable">
+            <ul>
+              <li>
+                <a href="#">
+                  <img id="logo" src="src\assets\logo.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#sedes">Nuestras sedes</a>
+              </li>
+              <li>
+                <a href="https://wa.me/573043564668" target="_blank">
+                  3043564668
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/superpan_bucaramanga/"
+                  target="_blank"
+                >
+                  <img src="src\assets\instagram.svg" alt="" />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
 
-      <div className="sliderContainer">
-        <div className="slider position">
-          <h1 className="sliderText">
-            Prueba el mejor pan de Bucaramanga en alguno de nuestros 7 puntos en
-            la ciudad
-          </h1>
+        <div className="sliderContainer">
+          <div className="slider position">
+            <h1 className="sliderText">
+              Prueba el mejor pan de Bucaramanga en alguno de nuestros 7 puntos
+              en la ciudad
+            </h1>
+          </div>
         </div>
-      </div>
-      <main>
+
         <div className="cardContainer">
           <h2>Nuestras sedes</h2>
-          <section className="cards" id="sedes">
+          <Sedes />
+          {/* <section className="cards" id="sedes">
             <div className="card">
               <img src="/src/assets/fotico.jpg" alt="" />
               <h3>Barrio Porvenir</h3>
@@ -65,7 +68,7 @@ function App() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
                 nobis
               </p>
-              <button>Ver Mas</button>
+              <button>Ir a dirección</button>
             </div>
             <div className="card">
               <img src="/src/assets/fotico.jpg" alt="" />
@@ -74,7 +77,7 @@ function App() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
                 nobis
               </p>
-              <button>Ver Mas</button>
+              <button>Ir a dirección</button>
             </div>
             <div className="card">
               <img src="/src/assets/fotico.jpg" alt="" />
@@ -83,7 +86,7 @@ function App() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
                 nobis
               </p>
-              <button>Ver Mas</button>
+              <button>Ir a dirección</button>
             </div>
             <div className="card">
               <img src="/src/assets/fotico.jpg" alt="" />
@@ -92,7 +95,7 @@ function App() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
                 nobis
               </p>
-              <button>Ver Mas</button>
+              <button>Ir a dirección</button>
             </div>
             <div className="card">
               <img src="/src/assets/fotico.jpg" alt="" />
@@ -101,7 +104,7 @@ function App() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
                 nobis
               </p>
-              <button>Ver Mas</button>
+              <button>Ir a dirección</button>
             </div>
             <div className="card">
               <img src="/src/assets/fotico.jpg" alt="" />
@@ -110,7 +113,7 @@ function App() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
                 nobis
               </p>
-              <button>Ver Mas</button>
+              <button>Ir a dirección</button>
             </div>
             <div className="card">
               <img src="/src/assets/fotico.jpg" alt="" />
@@ -119,9 +122,9 @@ function App() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
                 nobis
               </p>
-              <button>Ver Mas</button>
+              <button>Ir a dirección</button>
             </div>
-          </section>
+          </section> */}
         </div>
 
         <footer>
@@ -153,7 +156,7 @@ function App() {
             </a>
           </span>
         </footer>
-      </main>
+      </div>
     </>
   );
 }

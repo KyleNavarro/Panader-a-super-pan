@@ -8,6 +8,23 @@
   font-size: 20px;
 }
 
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ocupa toda la pantalla */
+}
+
+.content {
+  flex: 1; /* se expande y empuja el footer hacia abajo */
+}
+
 body {
   background-color: var(--color-amarillo-mostaza);
   color: var(--color-marron-oscuro);
@@ -86,7 +103,8 @@ header {
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* No repite la imagen */
   width: 100%; /* Ocupa todo el ancho */
-  height: 800px; /* Ocupa toda la altura de la ventana */
+  min-height: 80vh;
+  height: auto;
   animation: animate 40s infinite;
   opacity: 90%;
   margin-bottom: 20px;
@@ -119,7 +137,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 800px;
+  min-height: 50vh;
+  height: auto;
 }
 .cardContainer h2 {
   margin: 15px 0;
@@ -197,9 +216,4 @@ footer span a {
 
 footer span a:hover {
   color: #f4c07a;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
 }
