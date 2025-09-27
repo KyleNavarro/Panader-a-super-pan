@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Sedes from "./assets/Sedes";
+import About from "./about";
 
 let vacio = "";
 
@@ -32,6 +33,9 @@ function App() {
                 <a href="#sedes">Nuestras sedes</a>
               </li>
               <li>
+                <a href="#nosotros">Sobre Nosotros</a>
+              </li>
+              <li>
                 <a href="https://wa.me/573043564668" target="_blank">
                   3043564668
                 </a>
@@ -51,81 +55,20 @@ function App() {
         <div className="sliderContainer">
           <div className="slider position">
             <h1 className="sliderText">
-              Prueba el mejor pan de Bucaramanga en alguno de nuestros 7 puntos
-              en la ciudad
+              Con 9 años de experiencia y 7 sedes en Bucaramanga, ofrecemos la
+              frescura y calidad que nos distingue.
             </h1>
           </div>
         </div>
 
         <div className="cardContainer">
-          <h2>Nuestras sedes</h2>
+          <h2 id="sedes">Nuestras sedes</h2>
           <Sedes />
-          {/* <section className="cards" id="sedes">
-            <div className="card">
-              <img src="/src/assets/fotico.jpg" alt="" />
-              <h3>Barrio Porvenir</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                nobis
-              </p>
-              <button>Ir a dirección</button>
-            </div>
-            <div className="card">
-              <img src="/src/assets/fotico.jpg" alt="" />
-              <h3>Barrio Coaviconsa</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                nobis
-              </p>
-              <button>Ir a dirección</button>
-            </div>
-            <div className="card">
-              <img src="/src/assets/fotico.jpg" alt="" />
-              <h3>Barrio San Anto. Carrizal</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                nobis
-              </p>
-              <button>Ir a dirección</button>
-            </div>
-            <div className="card">
-              <img src="/src/assets/fotico.jpg" alt="" />
-              <h3>Barrio campo hermoso</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                nobis
-              </p>
-              <button>Ir a dirección</button>
-            </div>
-            <div className="card">
-              <img src="/src/assets/fotico.jpg" alt="" />
-              <h3>Barrio villas don juan</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                nobis
-              </p>
-              <button>Ir a dirección</button>
-            </div>
-            <div className="card">
-              <img src="/src/assets/fotico.jpg" alt="" />
-              <h3>Barrio oasis</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                nobis
-              </p>
-              <button>Ir a dirección</button>
-            </div>
-            <div className="card">
-              <img src="/src/assets/fotico.jpg" alt="" />
-              <h3>Barrio cuaviconsa</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                nobis
-              </p>
-              <button>Ir a dirección</button>
-            </div>
-          </section> */}
         </div>
+
+        <article id="nosotros">
+          <About />
+        </article>
 
         <footer>
           <ul>
