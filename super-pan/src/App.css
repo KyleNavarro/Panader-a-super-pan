@@ -16,6 +16,10 @@ body,
   scroll-behavior: smooth;
 }
 
+header {
+  background-color: #ffffff;
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -60,12 +64,12 @@ a::after {
   bottom: -3px; /* espacio entre texto y línea */
   width: 0;
   height: 2px;
-  background: #ffffff;
+  background: var(--color-amarillo-mostaza);
   transition: width 0.3s ease;
 }
 
 a:hover {
-  color: #ffffff; /* mantiene el color al hover */
+  color: var(--color-amarillo-mostaza);
 }
 
 a:hover::after {
@@ -163,17 +167,9 @@ header {
   margin: 15px 0;
 }
 .cards {
-  /* flex-wrap: wrap;
-  margin: 0 auto;
-  width: 80vw;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 15px;
-  margin-bottom: 15px; */
-  width: 70vw;
+  width: 73vw;
   display: grid;
-  gap: 1.5rem; /* espacio entre cards */
+  gap: 15px;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
@@ -190,6 +186,23 @@ header {
   align-items: center;
   flex-direction: column;
   padding: 0;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 3px solid var(--color-rojo-vino);
+
+  /* truco: borde invisible inicialmente */
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 0.2s linear;
+}
+
+.card:hover::before {
+  clip-path: inset(0 0 0 0);
 }
 
 .card h3 {
@@ -280,16 +293,47 @@ footer span a:hover {
   text-align: justify;
 }
 
-.imgAbout img {
+/* .imgAbout img {
   width: 100%;
   height: auto;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   object-fit: cover;
   transition: transform 0.3s ease;
+} */
+
+/* .imgAbout img:hover {
+  transform: scale(1.03);
+} */
+
+.imgAbout {
+  position: relative;
+  display: inline-block; /* para que el borde ajuste al tamaño de la imagen */
+  overflow: hidden; /* asegura que el borde respete las esquinas redondeadas */
 }
 
-.imgAbout img:hover {
-  transform: scale(1.03);
+/* Estilo de la imagen */
+.imgAbout img {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+/* Borde animado */
+.imgAbout::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 3px solid var(--color-rojo-vino);
+
+  /* borde oculto al inicio */
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 0.2s linear;
+}
+
+/* Hover: animación del borde y zoom de imagen */
+.imgAbout:hover::before {
+  clip-path: inset(0 0 0 0);
 }
 
 /* Responsive */
