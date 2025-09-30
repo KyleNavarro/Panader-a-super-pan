@@ -293,25 +293,12 @@ footer span a:hover {
   text-align: justify;
 }
 
-/* .imgAbout img {
-  width: 100%;
-  height: auto;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  object-fit: cover;
-  transition: transform 0.3s ease;
-} */
-
-/* .imgAbout img:hover {
-  transform: scale(1.03);
-} */
-
 .imgAbout {
   position: relative;
-  display: inline-block; /* para que el borde ajuste al tamaño de la imagen */
-  overflow: hidden; /* asegura que el borde respete las esquinas redondeadas */
+  display: inline-block;
+  overflow: hidden;
 }
 
-/* Estilo de la imagen */
 .imgAbout img {
   width: 100%;
   height: auto;
@@ -319,24 +306,20 @@ footer span a:hover {
   object-fit: cover;
 }
 
-/* Borde animado */
 .imgAbout::before {
   content: "";
   position: absolute;
   inset: 0;
   border: 3px solid var(--color-rojo-vino);
 
-  /* borde oculto al inicio */
   clip-path: inset(0 100% 0 0);
   transition: clip-path 0.2s linear;
 }
 
-/* Hover: animación del borde y zoom de imagen */
 .imgAbout:hover::before {
   clip-path: inset(0 0 0 0);
 }
 
-/* Responsive */
 @media (max-width: 900px) {
   .about {
     grid-template-columns: 1fr;

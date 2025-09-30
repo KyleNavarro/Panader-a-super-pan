@@ -74,7 +74,7 @@ function App() {
           <ul>
             <li>
               <a href="https://wa.me/573043564668" target="_blank">
-                3043564668
+                3043564661
               </a>
             </li>
             <li>correo@correo.com</li>
