@@ -2,6 +2,8 @@ import { useState } from "react";
 import "./App.css";
 import Sedes from "./assets/Sedes";
 import About from "./about";
+import instagramLogo from "./assets/instagram.svg";
+import superLogo from "./assets/logo.png";
 
 let vacio = "";
 
@@ -26,7 +28,7 @@ function App() {
             <ul>
               <li>
                 <a href="#">
-                  <img id="logo" src="src\assets\logo.png" alt="" />
+                  <img id="logo" src={superLogo} alt="logo superpan" />
                 </a>
               </li>
               <li>
@@ -45,7 +47,8 @@ function App() {
                   href="https://www.instagram.com/superpan_bucaramanga/"
                   target="_blank"
                 >
-                  <img src="src\assets\instagram.svg" alt="" />
+                  <img src={instagramLogo} alt="logo de instagram" />
+                  Instagram
                 </a>
               </li>
             </ul>
@@ -71,10 +74,43 @@ function App() {
         </article>
 
         <footer>
-          <ul>
+          <div>
+            <img src={superLogo} alt="logo de super pan" />
+            <p>
+              Somos una cadena de panaderías que nace de nuestra tierra, donde
+              cada pan, torta y amasijo es hecho a mano por nuestra gente.
+              Honramos lo natural, lo sano y lo nutritivo, ofreciendo siempre
+              productos frescos, auténticos y llenos de sabor, en un lugar donde
+              lo artificial no tiene cabida.
+            </p>
+          </div>
+          <div>
+            <h3>Contactanos</h3>
+            <ul>
+              {/* <li>{Sedes[1].nombre}</li> */}
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div></div>
+          {/* <li>
+              <a
+                href="https://www.instagram.com/superpan_bucaramanga/"
+                target="_blank"
+              >
+                <img src="" alt="" />
+                <span>Instragram</span>
+              </a>
+            </li>
             <li>
-              <a href="https://wa.me/573043564668" target="_blank">
-                3043564661
+              <a
+                href="https://www.instagram.com/superpan_bucaramanga/"
+                target="_blank"
+              >
+                <img src="" alt="" />
+                <span>Facebook</span>
               </a>
             </li>
             <li>correo@correo.com</li>
@@ -97,7 +133,7 @@ function App() {
             >
               Elaborado por: Kyle Navarro
             </a>
-          </span>
+          </span> */}
         </footer>
       </div>
     </>

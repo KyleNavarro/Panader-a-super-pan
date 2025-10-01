@@ -50,7 +50,13 @@ a {
   font-weight: 400;
 }
 
+a img {
+  width: 30px;
+}
+
 a {
+  display: flex;
+  align-items: flex-end;
   position: relative;
   color: var(--color-rojo-vino);
   text-decoration: none; /* quitamos el subrayado por defecto */
@@ -216,21 +222,21 @@ header {
   object-fit: cover;
 }
 
-footer {
+/* footer {
   background-color: #3a2210;
-  color: #fff; /* texto en blanco */
+  color: #fff;
   padding: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* se adapta en pantallas pequeñas */
+  flex-wrap: wrap;
   font-family: sans-serif;
 }
 
 footer ul {
   list-style: none;
   display: flex;
-  gap: 2rem; /* separación entre los elementos */
+  gap: 2rem; 
   margin: 0;
   padding: 0;
 }
@@ -242,7 +248,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-  color: #f4c07a; /* color destacado al pasar el mouse */
+  color: #f4c07a;
 }
 
 footer span {
@@ -257,7 +263,7 @@ footer span a {
 
 footer span a:hover {
   color: #f4c07a;
-}
+} */
 
 .about {
   display: grid;
