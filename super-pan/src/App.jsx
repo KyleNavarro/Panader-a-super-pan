@@ -5,8 +5,6 @@ import About from "./about";
 import instagramLogo from "./assets/instagram.svg";
 import superLogo from "./assets/logo.png";
 
-let vacio = "";
-
 function App() {
   const OpenCloseMenu = () => {
     const menuDesplegable = document.getElementById("menu");
